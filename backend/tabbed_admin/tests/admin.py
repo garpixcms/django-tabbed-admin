@@ -1,7 +1,7 @@
 from django.contrib import admin
 
-from tabbed_admin import TabbedModelAdmin
-from tabbed_admin.tests.models import Band, Musician, Concert, Album, Interview
+from backend.tabbed_admin import TabbedModelAdmin
+from backend.tabbed_admin.tests.models import Band, Musician, Concert, Album, Interview
 
 
 class MusicianInline(admin.StackedInline):

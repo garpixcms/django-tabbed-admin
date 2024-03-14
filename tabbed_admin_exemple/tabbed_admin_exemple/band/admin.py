@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from tabbed_admin import TabbedModelAdmin
+from backend.tabbed_admin import TabbedModelAdmin
 from .models import Band, Musician, Concert, Album, Interview
 
 

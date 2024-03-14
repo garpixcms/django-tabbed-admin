@@ -2,13 +2,12 @@ from django.conf import settings
 from django.contrib.admin.sites import AdminSite
 from django.template import Context
 from django.test import TestCase
-from django.test.client import RequestFactory, Client
-from django.test.utils import override_settings
+from django.test.client import RequestFactory
 
-from tabbed_admin.settings import USE_JQUERY_UI
-from tabbed_admin.templatetags.tabbed_admin_tags import render_tab_fieldsets_inlines
-from tabbed_admin.tests.admin import BandAdmin, InterviewInline
-from tabbed_admin.tests.models import Band
+from backend.tabbed_admin.settings import USE_JQUERY_UI
+from backend.tabbed_admin.templatetags.tabbed_admin_tags import render_tab_fieldsets_inlines
+from backend.tabbed_admin.tests.admin import BandAdmin, InterviewInline
+from backend.tabbed_admin.tests.models import Band
 
 
 class MockRequest(object):
